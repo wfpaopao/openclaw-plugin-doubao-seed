@@ -18,7 +18,7 @@ import {
   DOUBAO_SEEDANCE_DEFAULT_MODEL_ID,
 } from "./models.js";
 
-const DEFAULT_TIMEOUT_MS = 300_000;
+const DEFAULT_TIMEOUT_MS = 600_000;
 const POLL_INTERVAL_MS = 5_000;
 const MAX_POLL_ATTEMPTS = 120;
 

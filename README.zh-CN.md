@@ -145,7 +145,7 @@ export ARK_API_KEY="your_ark_api_key"
 - `seedanceDurationSeconds`：默认时长（秒）
 - `seedanceAudio`：默认是否生成音频
 - `seedanceWatermark`：默认视频水印开关
-- `seedanceTimeoutMs`：Seedance 任务轮询超时毫秒数（默认 `300000`）
+- `seedanceTimeoutMs`：Seedance 任务轮询超时毫秒数（默认 `600000`）
 
 ## 支持的模型 ID
 
@@ -255,7 +255,7 @@ export ARK_API_KEY="your_ark_api_key"
           "seedanceDurationSeconds": 5,
           "seedanceAudio": true,
           "seedanceWatermark": true,
-          "seedanceTimeoutMs": 300000
+          "seedanceTimeoutMs": 600000
         }
       }
     }
@@ -285,7 +285,7 @@ export ARK_API_KEY="your_ark_api_key"
           "seedanceDurationSeconds": 5,
           "seedanceAudio": true,
           "seedanceWatermark": true,
-          "seedanceTimeoutMs": 300000
+          "seedanceTimeoutMs": 600000
         }
       }
     }

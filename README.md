@@ -145,7 +145,7 @@ Supported options:
 - `seedanceDurationSeconds`: default duration in seconds
 - `seedanceAudio`: default audio generation toggle
 - `seedanceWatermark`: default video watermark toggle
-- `seedanceTimeoutMs`: timeout for Seedance task polling in milliseconds (default `300000`)
+- `seedanceTimeoutMs`: timeout for Seedance task polling in milliseconds (default `600000`)
 
 ## Supported Model IDs
 
@@ -255,7 +255,7 @@ Use this when you want explicit model and generation defaults in plugin config:
           "seedanceDurationSeconds": 5,
           "seedanceAudio": true,
           "seedanceWatermark": true,
-          "seedanceTimeoutMs": 300000
+          "seedanceTimeoutMs": 600000
         }
       }
     }
@@ -285,7 +285,7 @@ Plugin config example only:
           "seedanceDurationSeconds": 5,
           "seedanceAudio": true,
           "seedanceWatermark": true,
-          "seedanceTimeoutMs": 300000
+          "seedanceTimeoutMs": 600000
         }
       }
     }
