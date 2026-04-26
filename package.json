@@ -1,0 +1,16 @@
+{
+  "name": "openclaw-plugin-doubao-seed",
+  "version": "0.1.0",
+  "description": "Doubao Seed plugin for OpenClaw (Seed 2.0, Seedream 5.0, Seedance 2.0)",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.ts",
+  "openclaw": {
+    "extensions": [
+      {
+        "id": "doubao-seed",
+        "entry": "./index.ts"
+      }
+    ]
+  }
+}

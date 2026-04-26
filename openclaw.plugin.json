@@ -1,0 +1,35 @@
+{
+  "id": "doubao-seed",
+  "enabledByDefault": true,
+  "providers": ["doubao-seed"],
+  "providerAuthEnvVars": {
+    "doubao-seed": ["ARK_API_KEY", "VOLCANO_ENGINE_API_KEY"]
+  },
+  "contracts": {
+    "mediaUnderstandingProviders": ["doubao-seed"],
+    "imageGenerationProviders": ["doubao-seed"],
+    "videoGenerationProviders": ["doubao-seed"]
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "apiKey": { "type": "string" },
+      "baseUrl": { "type": "string" },
+      "seedModel": { "type": "string" },
+      "seedreamModel": { "type": "string" },
+      "seedanceModel": { "type": "string" },
+      "seedreamSize": { "type": "string" },
+      "seedreamResponseFormat": { "type": "string" },
+      "seedreamSequentialImageGeneration": { "type": "string" },
+      "seedreamStream": { "type": "boolean" },
+      "seedreamWatermark": { "type": "boolean" },
+      "seedanceAspectRatio": { "type": "string" },
+      "seedanceResolution": { "type": "string" },
+      "seedanceDurationSeconds": { "type": "number" },
+      "seedanceAudio": { "type": "boolean" },
+      "seedanceWatermark": { "type": "boolean" },
+      "seedanceTimeoutMs": { "type": "number" }
+    }
+  }
+}
