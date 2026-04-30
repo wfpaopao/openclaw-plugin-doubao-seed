@@ -2,8 +2,13 @@
   "id": "doubao-seed",
   "enabledByDefault": true,
   "providers": ["doubao-seed"],
-  "providerAuthEnvVars": {
-    "doubao-seed": ["ARK_API_KEY", "VOLCANO_ENGINE_API_KEY"]
+  "setup": {
+    "providers": [
+      {
+        "id": "doubao-seed",
+        "envVars": ["ARK_API_KEY", "VOLCANO_ENGINE_API_KEY"]
+      }
+    ]
   },
   "contracts": {
     "mediaUnderstandingProviders": ["doubao-seed"],
