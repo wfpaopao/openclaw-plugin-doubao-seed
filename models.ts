@@ -1,5 +1,4 @@
 import type { ModelDefinitionConfig } from "openclaw/plugin-sdk/provider-model-shared";
-import { buildVolcModelDefinition } from "openclaw/plugin-sdk/volc-model-catalog-shared";
 
 export const DOUBAO_SEED_PROVIDER_ID = "doubao-seed";
 export const DOUBAO_SEED_BASE_URL = "https://ark.cn-beijing.volces.com/api/v3";
@@ -54,5 +53,13 @@ export const DOUBAO_SEED_MODEL_CATALOG = [
 export type DoubaoSeedCatalogEntry = (typeof DOUBAO_SEED_MODEL_CATALOG)[number];
 
 export function buildDoubaoSeedModelDefinition(entry: DoubaoSeedCatalogEntry): ModelDefinitionConfig {
-  return buildVolcModelDefinition(entry, DOUBAO_SEED_DEFAULT_COST);
+  return {
+    id: entry.id,
+    name: entry.name,
+    reasoning: entry.reasoning,
+    input: [...entry.input],
+    cost: DOUBAO_SEED_DEFAULT_COST,
+    contextWindow: entry.contextWindow,
+    maxTokens: entry.maxTokens,
+  };
 }
